@@ -6,8 +6,14 @@
    
 3. __Ultrasonic Sensors (x2)__
 4. __Speaker__
-5. __Servo Motor__
-6. __RGB LED Common Cathode__
+
+   $V = $
+
+   $I = $
+
+   $P = V * I = $
+6. __Servo Motor__
+7. __RGB LED Common Cathode__
 
    $V = 0.616 \ V$
    
