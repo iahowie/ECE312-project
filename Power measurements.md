@@ -9,8 +9,8 @@
 5. __Servo Motor__
 6. __RGB LED Common Cathode__
 
-   $V = 0.616 \: V$
+   $V = 0.616 \ V$
    
-   $I = 5.79 \: mA $
+   $I = 5.79 \ mA $
    
-   $P = V * I = 5.79 * 0.616 = 3.57 \: mW$
+   $P = V * I = 5.79 * 0.616 = 3.57 \ mW$
