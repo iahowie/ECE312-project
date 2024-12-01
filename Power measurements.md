@@ -10,17 +10,17 @@
    
 3. __Ultrasonic Sensors (x2)__
 
-   For a single sensor:
+   - For a single sensor:
    
-   $V = $
+      $V = $
+   
+      $I = $
+   
+      $P_{single} = V * I = $
 
-   $I = $
+   - For two sensors:
 
-   $P_{single} = V * I = $
-
-   For two sensors:
-
-   $P_{total} = 2*P_{single} = $
+      $P_{total} = 2*P_{single} = $
 
 5. __Speaker__
 
