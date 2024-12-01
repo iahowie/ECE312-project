@@ -16,11 +16,11 @@
 
    $I = $
 
-   $P_s_i_n_g_l_e_ = V * I = $
+   $P_{single} = V * I = $
 
    For two sensors:
 
-   $P_t_o_t_a_l_ = 2*P_s_i_n_g_l_e_ = $
+   $P_{total} = 2*P_{single} = $
 
 5. __Speaker__
 
