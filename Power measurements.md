@@ -1,7 +1,7 @@
 # Power measurements for Railroad Crossing System
 
-1. LCD Display
-2. Ultrasonic Sensors (x2)
-3. Speaker
-4. Servo Motor
-5. RGB LED Common Cathode
+1. __LCD Display__
+2. __Ultrasonic Sensors (x2)__
+3. __Speaker__
+4. __Servo Motor__
+5. __RGB LED Common Cathode__
