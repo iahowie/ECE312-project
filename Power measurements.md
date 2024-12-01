@@ -3,17 +3,42 @@
 1. __LCD Display__
    
    $V = $
+
+   $I = $
+
+   $P = V * I = $
    
 3. __Ultrasonic Sensors (x2)__
-4. __Speaker__
+
+   For a single sensor:
+   
+   $V = $
+
+   $I = $
+
+   $P_single = V * I = $
+
+   For two sensors:
+
+   $P_total = 2*P_single = $
+
+5. __Speaker__
 
    $V = $
 
    $I = $
 
    $P = V * I = $
+   
 6. __Servo Motor__
-7. __RGB LED Common Cathode__
+
+   $V = $
+
+   $I = $
+
+   $P = V * I = $
+
+8. __RGB LED Common Cathode__
 
    $V = 0.616 \ V$
    
