@@ -6,9 +6,9 @@
 
    $I = $
 
-   $P = V * I = $
+   $P_1 = V * I = $
    
-3. __Ultrasonic Sensors (x2)__
+2. __Ultrasonic Sensors (x2)__
 
    - For a single sensor:
    
@@ -16,32 +16,32 @@
    
       $I = $
    
-      $P_{single} = V * I = $
+      $P_{2, single} = V * I = $
 
    - For two sensors:
 
-      $P_{total} = 2*P_{single} = $
+      $P_{2, total} = 2*P_{single} = $
 
-5. __Speaker__
+3. __Speaker__
 
    $V = $
 
    $I = $
 
-   $P = V * I = $
+   $P_3 = V * I = $
    
-6. __Servo Motor__
+4. __Servo Motor__
 
    $V = $
 
    $I = $
 
-   $P = V * I = $
+   $P_4 = V * I = $
 
-8. __RGB LED Common Cathode__
+5. __RGB LED Common Cathode__
 
    $V = 0.616 \ V$
    
    $I = 5.79 \ mA $
    
-   $P = V * I = 5.79 * 0.616 = 3.57 \ mW$
+   $P_5 = V * I = 5.79 * 0.616 = 3.57 \ mW$
