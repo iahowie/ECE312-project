@@ -30,7 +30,7 @@ void warning_routine_inializatoin() {
     DDRD |= (1 << SERVO); // Set PD3 (OC2B) as output
     // Configure Timer2 for Phase Correct PWM
     TCCR2A = (1 << COM2B1) | (1 << WGM20);  // Phase Correct PWM, non-inverted
-    TCCR2B = (1 << WGM22) | (1 << CS22) | (1 << CS20); // Prescaler = 64
+    TCCR2B = (1 << WGM22) | (1 << CS22) | (1 << CS20); // Prescaler = 128
     // Set TOP value for 50 Hz (20 ms period)
     OCR2A = 79;
     // Initialize duty cycle to 0%
