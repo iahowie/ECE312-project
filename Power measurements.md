@@ -20,7 +20,7 @@
 
    - For two sensors:
 
-      $P_{2, total} = 2*P_{2, single} = 2 * 11.1 = 2.22 \ mW$
+      $P_{2, total} = 2*P_{2, single} = 2 * 11.1 = 22.2 \ mW$
 
 3. __Speaker__
 
