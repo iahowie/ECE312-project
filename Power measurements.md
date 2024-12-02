@@ -60,6 +60,6 @@
    
    $P_5 = V * I = 5.79 * 0.616 = 3.57 \ mW$
 
-## Total Power Dissipation:
+### Total Peak Power Dissipation:
 
 $P_{total} = 106.9 + 22.2 + 8.88 + 1020 + 3.57 = textbf{1160 \ mW} = textbf{1.16 W}$
