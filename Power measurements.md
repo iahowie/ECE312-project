@@ -2,13 +2,23 @@
 
 1. __LCD Display__
    
-   $V = $
+   - For the display characters:
 
-   $I = $
+      $V = 4.76 \ V$
+      
+      $I = 0.14  \ mA$
+      
+      $P_1 = V * I = 4.76 * 0.14 = 0.666 \ mW$
 
-   $P_1 = V * I = $
+   - For the backlight:
+
+      $V = 4.76 \ V$
+      
+      $I = 0.14  \ mA$
+      
+      $P_1 = V * I = 4.76 * 0.14 = 0.666 \ mW$    
    
-2. __Ultrasonic Sensors (x2)__
+3. __Ultrasonic Sensors (x2)__
 
    - For a single sensor:
    
@@ -22,7 +32,7 @@
 
       $P_{2, total} = 2*P_{2, single} = 2 * 11.1 = 22.2 \ mW$
 
-3. __Speaker__
+4. __Speaker__
 
    $V = 0.258 \ V$
 
@@ -30,7 +40,7 @@
 
    $P_3 = V * I = 0.258 * 34.4 = 8.88 \  mW$
    
-4. __Servo Motor__
+5. __Servo Motor__
 
    $V = 4.69 \ V$
 
@@ -38,7 +48,7 @@
 
    $P_4 = V * I = 4.69*0.217 = 1.02 \ W$
 
-5. __RGB LED Common Cathode__
+6. __RGB LED Common Cathode__
 
    $V = 0.616 \ V$
    
