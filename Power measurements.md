@@ -20,15 +20,15 @@
 
    - For two sensors:
 
-      $P_{2, total} = 2*P_{single} = $
+      $P_{2, total} = 2*P_{2, single} = $
 
 3. __Speaker__
 
-   $V = $
+   $V = 0.258 \ V$
 
-   $I = $
+   $I = 34.4 \ mA$
 
-   $P_3 = V * I = $
+   $P_3 = V * I = 0.258 * 34.4 = 8.88 mW$
    
 4. __Servo Motor__
 
