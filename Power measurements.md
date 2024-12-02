@@ -62,4 +62,4 @@
 
 ## Total Power Dissipation:
 
-$P_{total} = 106.9 + 22.2 + 8.88 + 1020 + 3.57 = textbf{1160 \ mW} = textbf{1.16 W}
+$P_{total} = 106.9 + 22.2 + 8.88 + 1020 + 3.57 = textbf{1160 \ mW} = textbf{1.16 W}$
