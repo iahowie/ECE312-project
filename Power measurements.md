@@ -32,11 +32,11 @@
    
 4. __Servo Motor__
 
-   $V = $
+   $V = 4.69 \ V$
 
-   $I = $
+   $I = 0.217 \ A$
 
-   $P_4 = V * I = $
+   $P_4 = V * I = 4.69*0.217 = 1.02 \ W$
 
 5. __RGB LED Common Cathode__
 
