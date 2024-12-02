@@ -1,4 +1,4 @@
-# Power measurements for Railroad Crossing System
+# Power measurements for the Railroad Crossing System
 
 1. __LCD Display__
    
@@ -12,15 +12,15 @@
 
    - For the backlight:
 
-      $V = 4.76 \ V$
+      $V = 5.01 \ V$
       
-      $I = 0.14  \ mA$
+      $I = 21.2  \ mA$
       
-      $P_{1, backlight} = V * I = 4.76 * 0.14 = 0.666 \ mW$
+      $P_{1, backlight} = V * I = 5.01 * 21.2 = 106.2 \ mW$
 
    - Total power dissipation:
 
-      
+      $P_{1} = P_{1, display} + P_{1, backlight} = 0.666 + 106.2 = 106.9 \ mW$
    
 3. __Ultrasonic Sensors (x2)__
 
@@ -59,3 +59,7 @@
    $I = 5.79 \ mA $
    
    $P_5 = V * I = 5.79 * 0.616 = 3.57 \ mW$
+
+## Total Power Dissipation:
+
+$P_{total} = 106.9 + 22.2 + 8.88 + 1020 + 3.57 = textbf{1160 \ mW} = textbf{1.16 W}
