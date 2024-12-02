@@ -8,7 +8,7 @@
       
       $I = 0.14  \ mA$
       
-      $P_1 = V * I = 4.76 * 0.14 = 0.666 \ mW$
+      $P_{1, display} = V * I = 4.76 * 0.14 = 0.666 \ mW$
 
    - For the backlight:
 
@@ -16,7 +16,11 @@
       
       $I = 0.14  \ mA$
       
-      $P_1 = V * I = 4.76 * 0.14 = 0.666 \ mW$    
+      $P_{1, backlight} = V * I = 4.76 * 0.14 = 0.666 \ mW$
+
+   - Total power dissipation:
+
+      
    
 3. __Ultrasonic Sensors (x2)__
 
