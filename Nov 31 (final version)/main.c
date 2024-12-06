@@ -1,4 +1,4 @@
-#define F_CPU 1000000UL // Define clock speed
+#define F_CPU 1000000UL //Define clock speed
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,8 +7,9 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 #include "warning.h"
+#include "warning.c"
 
-/* constants */
+//constants
 
 //U3, on PC pins
 #define u3_trig_pin PC4
@@ -29,7 +30,7 @@ const float sound_speed = 0.0343;
 //maximum counter ticks 2^16
 const uint32_t max_ctr = 65536UL;
 
-/*global vars*/
+//global variables
 
 int warning = 0;
 
@@ -55,7 +56,7 @@ volatile uint8_t u5_new_meas = 0;
 float u3_distance_cm = 0;
 float u5_distance_cm = 0;
 
-//local vars
+//local variables
 int16_t u3_lf = 0;
 int16_t u3_lr = 0;
 
@@ -106,7 +107,7 @@ ISR(TIMER1_OVF_vect) {
     u5_overflow_ctr ++;
 }
 
-/* Function definitions */
+//function definitions
 
 //pin should be the trigger pin
 void send_pulse(volatile uint8_t *port, uint8_t pin) {
@@ -134,8 +135,8 @@ float ticks_to_centi(int32_t re, int32_t fe, uint8_t of){
 
 int main() 
 {
-    warning_routine_inializatoin();
-    /* Ports and IO */
+    warning_routine_inialization();
+    //Ports and IO
     
     //enable echo pins (input))
     DDRC &= ~(1 << u3_echo_pin);
@@ -145,7 +146,7 @@ int main()
     DDRC |= (1 << u3_trig_pin);
     DDRB |= (1 << u5_trig_pin); 
     
-    /* rising and falling edge detection */
+    //rising and falling edge detection
     
     //enables pin change interrupts for PC and PB 
     PCICR |= (1 << PCIE1) | (1 << PCIE0); 
@@ -156,8 +157,7 @@ int main()
     //masks echo 2
     PCMSK0 |= (1 << PCINT2); 
     
-    /* timer clock and prescaler */
-    
+    //timer clock and prescaler
     TCCR1A = 0x00;
     
     //clock enable, no prescaler
@@ -211,12 +211,12 @@ int main()
         
         u5_distance_cm = ticks_to_centi(u5_lr, u5_lf, u5_lof_ctr);
                        
-        fprintf(&lcd_str, "\x1b\x01"); // clears lcd
+        fprintf(&lcd_str, "\x1b\x01"); //clears lcd
         int integer_part = (int)u3_distance_cm;
         int decimal_part = (int)((u3_distance_cm - integer_part) * 10); // Extract one decimal place
         fprintf(&lcd_str, "U3: %d.%d cm", integer_part, decimal_part);
 
-        fprintf(&lcd_str, "\x1b\xc0"); // Move to second line
+        fprintf(&lcd_str, "\x1b\xc0"); //Move to second line
         
         integer_part = (int)u5_distance_cm;
         decimal_part = (int)((u5_distance_cm - integer_part) * 10);
@@ -225,7 +225,7 @@ int main()
         while ((u3_distance_cm < WARNING_THRESHOLD) || (u5_distance_cm < WARNING_THRESHOLD)) {
             start_warning_routine();
 
-            // Update u3 distance
+            //Update u3 distance
             send_pulse(&PORTC, u3_trig_pin);
             while (u3_new_meas == 0) {}
             cli();
@@ -236,7 +236,7 @@ int main()
             sei();
             u3_distance_cm = ticks_to_centi(u3_lr, u3_lf, u3_lof_ctr);
 
-            // Update u5 distance
+            //Update u5 distance
             send_pulse(&PORTB, u5_trig_pin);
             while (u5_new_meas == 0) {}
             cli();
